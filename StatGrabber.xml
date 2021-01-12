@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<muclient>
+	<plugin
+    name="Aardwolf_Stats_Grabber"
+    author="Jyscal"
+    id="59e2bd0f5bba5ec4a22e294a"
+    language="Lua"
+    purpose="Track and export stats."
+    save_state="y"
+    date_written="2020-12-06 06:12:14"
+    requires="4.43"
+    version="1.0"
+    >
+		<description trim="y">
+			<![CDATA[
+			Track levels, Gold, Trains and Pups gained
+			during a session. Sessions can be started and
+			stopped at any time and then exported to upload
+			to AardStats Website
+			]]>
+		</description>
+	</plugin>
+
+	<triggers>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^You get (.+) gold coins from (.+) of (.+).$"
+			keep_evaluating="y"
+			omit_from_output="n"
+			script="tallyGold"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^You raise a level! You are now level (.+).$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="tallyLevels"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^You gain (.+) hit points, (.+) mana, (.+) moves, (.+) practices, (.+) trains and (.+) instinct trains.$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="tallyTrains"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^Lucky! You gain an extra (.+) training sessions!$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="tallyLucky"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^You are taxed (.+) gold coins by your clan.$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="removeTax"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^(.+) gives you (.+) gold coins for (.+) of (.+).$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="tallySac"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^You gain (.+) extra trains daily blessing bonus.$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="tallyDbTrains"
+			sequence="100"
+			send_to="12"
+		></trigger>
+	</triggers>
+
+	<aliases>
+		<alias
+		   script="startTracking"
+		   match="^starttrack$"
+		   enabled="y"
+		   regexp="y"
+		   send_to="12"
+		   keep_evaluating="y"
+		   sequence="1"
+  		></alias>
+		<alias
+		   script="stopTracking"
+		   match="^stoptrack$"
+		   enabled="y"
+		   regexp="y"
+		   send_to="12"
+		   keep_evaluating="y"
+		   sequence="1"
+  		></alias>
+		<alias
+		   script="showStats"
+		   match="^showstats$"
+		   enabled="y"
+		   regexp="y"
+		   send_to="12"
+		   keep_evaluating="y"
+		   sequence="1"
+  		></alias>
+		<alias
+		   script="resetSession"
+		   match="^resetstats$"
+		   enabled="y"
+		   regexp="y"
+		   send_to="12"
+		   keep_evaluating="y"
+		   sequence="1"
+  		></alias>
+		<alias
+		   script="exportStats"
+		   match="^exportstats$"
+		   enabled="y"
+		   regexp="y"
+		   send_to="12"
+		   keep_evaluating="y"
+		   sequence="1"
+  		></alias>
+	</aliases>
+	<script>
+		<![CDATA[
+		require "gmcphelper"
+
+		totalLevels = 0
+		totalGold = 0
+		totalTrains = 0
+		totalPups = 0
+		isTracking = false
+
+		function tallyLevels(name, line, wildcards)
+			if isTracking == true then
+				totalLevels = totalLevels + 1
+			end
+		end
+
+		function tallyGold(name, line, wildcards)
+			levelGold = wildcards[1]
+			if string.len(levelGold) > 3 then
+                if isTracking == true then
+                    levelGold = levelGold.gsub(levelGold, ",", "")
+                    totalGold = totalGold + tonumber(levelGold)
+                end
+			end
+		end
+		
+		function tallyDbTrains(name, line, wildcards)
+			if isTracking == true then
+				dbTrains = wildcards[1]
+				totalTrains = totalTrains + tonumber(dbTrains)
+			end 
+		end
+
+		function showStats(name, line, wildcards)
+			ColourTell("white", "", "Your current stats are:\nTotal Levels: "..totalLevels.."\nTotal Gold: "..totalGold.."\nTotal Trains: "..totalTrains.."\nTotal Pups: "..totalPups)
+		end
+
+		function tallyTrains(name, line, wildcards)
+			levelTrains = wildcards[5]
+			if isTracking == true then
+				totalTrains = totalTrains + tonumber(levelTrains)
+			end
+		end
+
+		function tallyPups(name, line, wildcards)
+			levelPups = wildcards[1]
+			if isTracking == true then
+				totalPups = totalPups + tonumber(levelPups)
+			end
+		end
+		
+		function tallySac(name, line, wildcards)
+			sacGold = wildcards[2]
+			if isTracking == true then
+				totalGold = totalGold + tonumber(sacGold)
+			end
+		end
+
+		function tallyLucky(name, line, wildcards)
+			luckyTrains = wildcards[1]
+			if isTracking == true then
+				totalTrains = totalTrains + tonumber(luckyTrains)
+			end
+		end
+
+		function removeTax(name, line, wildcards)
+			if isTracking == true then
+				totalGold = totalGold - wildcards[1]
+			end
+		end
+
+		function startTracking(name, line, wildcards)
+			isTracking = true
+			ColourTell("white", "blue", "Tracking started.")
+		end
+
+		function stopTracking(name, line, wildcards)
+			isTracking = false
+			ColourTell("white", "blue", "Tracking stopped.")
+		end
+
+		function resetSession(name, line, wildcards)
+			totalLevels = 0
+			totalGold = 0
+			totalTrains = 0
+			totalPups = 0
+
+			ColourTell("white", "blue", "Session reset.")
+		end
+
+		function exportStats(name, line, wildcards)
+			if isTracking == true then
+				ColourTell("white", "blue", "Tracking still active. Stopping...")
+				isTracking = false
+			end
+			nowTable = os.date('*t')
+			nowYear = nowTable.year
+			nowMonth = nowTable.month
+			nowDay = nowTable.day
+			exportDate = nowDay.."/"..nowMonth.."/"..nowYear
+
+			totalLevels = tostring(totalLevels)
+			totalGold = tostring(totalGold)
+			totalTrains = tostring(totalTrains)
+			totalPups = tostring(totalPups)
+
+			file = io.open("C:/Users/cheryl/Desktop/stats_export.txt", "w+")
+			file:write(exportDate..","..totalLevels..","..totalGold..","..totalTrains..","..totalPups)
+			file:close()
+
+			ColourTell("white", "blue", "Stats have been exported succesfully.")
+		end
+
+		function OnPluginInstall()
+
+		end
+
+		function OnPluginEnable()
+
+		end
+
+		function OnPluginDisable()
+
+		end
+
+		function OnPluginSaveState()
+
+		end
+		]]>
+	</script>
+</muclient>

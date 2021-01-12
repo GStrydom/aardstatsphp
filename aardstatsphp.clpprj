@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project name="C:\xampp\htdocs\aardstatsphp\aardstatsphp.clpprj">
+ <settings>
+  <PM_URL><![CDATA[http://localhost/aardstatsphp]]></PM_URL>
+  <PM_HOME_URL><![CDATA[http://localhost/aardstatsphp]]></PM_HOME_URL>
+  <PM_LIBS><![CDATA[]]></PM_LIBS>
+  <PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION>
+  <PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR>
+  <PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE>
+ </settings>
+ <removed value=";"/>
+ <added value=""/>
+ <lastopfiles>
+  <file name="C:\xampp\htdocs\aardstatsphp\public\graph.php"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\public\table.php"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\css\graphstyles.css"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\css\styles.css"/>
+  <lastactivefile name=""/>
+ </lastopfiles>
+ <errors version="1.10"/>
+ <cakedata/>
+ <dplmenupath/>
+ <laravael/>
+ <smartyassings/>
+ <twigtemplate/>
+ <yiidata/>
+ <todoblock>
+  <todofile name="C:\xampp\htdocs\aardstatsphp\private\chart\js\excanvas.js">
+   <todo name="TODO: use runtimeStyle and coordsize" pos="11;160"/>
+   <todo name="TODO: use runtimeStyle and coordsize" pos="11;167"/>
+   <todo name="TODO: Branch current matrix so that save/restore has no effect" pos="5;638"/>
+   <todo name="TODO: Following is broken for curves due to" pos="7;953"/>
+   <todo name="TODO: Gradients transformed with the transformation matrix." pos="7;1016"/>
+   <todo name="TODO: Figure out the correct size to fit the scale." pos="22;1099"/>
+   <todo name="TODO: Fix the min and max params." pos="7;1291"/>
+   <todo name="TODO: Implement" pos="5;1340"/>
+   <todo name="TODO: Implement" pos="5;1344"/>
+  </todofile>
+  <todofile name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery.jqplot.js">
+   <todo name="TODO: figure out what to do with null values" pos="17;1330"/>
+   <todo name="TODO: figure out some way to do shadows nicely" pos="25;5833"/>
+   <todo name="TODO: remove in 2.0 (#7115)" pos="13;11241"/>
+   <todo name="TODO: remove this check in 2.0, effectMethod will always be true" pos="13;11297"/>
+  </todofile>
+  <todofile name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery.js">
+   <todo name="TODO: This is a hack for 1.5 ONLY. Avoids exposing jQuery" pos="4;1483"/>
+   <todo name="TODO: This is a hack for 1.5 ONLY. It will be removed in 1.6. Users should" pos="3;1518"/>
+   <todo name="TODO: This is a hack for 1.5 ONLY. Avoids exposing jQuery" pos="4;1618"/>
+   <todo name="TODO: This is a hack for 1.5 ONLY to allow objects with a single toJSON" pos="1;1757"/>
+   <todo name="TODO: Stop taunting the data cache; remove global events and always attach to document" pos="4;2891"/>
+   <todo name="TODO: Move to normal caching system" pos="4;4300"/>
+  </todofile>
+  <todofile name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.categoryaxisrenderer.js">
+   <todo name="todo: adjust this so more ticks displayed." pos="13;262"/>
+  </todofile>
+ </todoblock>
+ <dbgurls/>
+ <filescache>
+  <file name="C:\xampp\htdocs\aardstatsphp\public\user.php" crc="1610108509286"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\public\table.php" crc="1609645834415"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\public\graph.php" crc="1610257280061"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\server\cls_util.php" crc="1492417014000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\server\cls_title.php" crc="1492417014000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\server\cls_series.php" crc="1492417014000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\server\cls_phpchartx.php" crc="1492417014000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\server\cls_legend.php" crc="1492417004000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\server\cls_grid.php" crc="1492417004000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\server\cls_conf.php" crc="1492417004000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\server\cls_axes.php" crc="1492417004000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.trendline.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.trendline.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pyramidrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pyramidrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pyramidgridrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pyramidgridrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pyramidaxisrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pyramidaxisrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pointlabels.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pointlabels.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pierenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.pierenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.ohlcrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.ohlcrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.mobile.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.mobile.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.metergaugerenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.metergaugerenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.mekkorenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.mekkorenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.mekkoaxisrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.mekkoaxisrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.logaxisrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.logaxisrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.json2.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.json2.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.highlighter.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.highlighter.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.funnelrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.funnelrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.enhancedlegendrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.enhancedlegendrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.dragable.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.dragable.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.donutrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.donutrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.dateaxisrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.dateaxisrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.cursor.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.cursor.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.ciparser.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.ciparser.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.categoryaxisrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.categoryaxisrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.canvastextrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.canvastextrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.canvasoverlay.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.canvasoverlay.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.canvasaxistickrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.canvasaxistickrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.canvasaxislabelrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.canvasaxislabelrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.bubblerenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.bubblerenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.blockrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.blockrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.beziercurverenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.beziercurverenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.barrenderer.min.js" crc="1352751090000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\plugins\jqplot.barrenderer.js" crc="1352751058000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\zenburn.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\vs.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\sunburst.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\solarized_light.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\solarized_dark.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\school_book.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\magula.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\ir_black.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\idea.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\github.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\far.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\default.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\dark.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\brown_paper.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\ascetic.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\styles\arta.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\xml.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\vhdl.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\vbscript.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\vala.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\tex.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\sql.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\smalltalk.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\scala.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\ruby.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\renderman.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\python.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\profile.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\php.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\perl.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\parser3.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\objectivec.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\nginx.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\mel.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\lua.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\lisp.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\javascript.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\java.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\ini.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\haskell.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\go.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\erlang.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\erlang-repl.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\dos.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\django.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\diff.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\delphi.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\css.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\cs.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\cpp.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\cmake.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\bash.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\axapta.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\avrasm.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\apache.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\languages\1c.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\highlight.pack.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\highlight.js" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\highlighter\classref.txt" crc="1334085242000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\css\cupertino\jquery-ui-1.8.16.custom.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\version.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\usage.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\showjs.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\README.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\optionsTutorial.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\MIT-LICENSE.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery.min.js" crc="1492411190000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery.jqplot.min.js" crc="1352754690000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery.jqplot.min.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery.jqplot.js" crc="1352754630000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery.jqplot.css" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery-ui-1.8.16.custom.min.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jquery-migrate-1.4.1.min.js" crc="1492411378000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jqPlotOptions.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\jqPlotCssStyling.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\gpl-2.0.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\excanvas.min.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\excanvas.js" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\copyright.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\js\changes.txt" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\css\pricing-style.css" crc="1492409930000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\css\debug.css" crc="1334085236000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\css\960.css" crc="1492409806000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\phpChart.php" crc="1334085240000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\chart\conf.php" crc="1443616224000"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\navbar.php" crc="1607575512512"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\private\db.php" crc="1607503993540"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\css\styles.css" crc="1609651256688"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\css\graphstyles.css" crc="1609651101130"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\aardscripts\statgrabber.xml" crc="1607600833786"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\scopes\scope_settings.xml" crc="1608524828373"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\dictionaries\Administrator.xml" crc="1608703179310"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\workspace.xml" crc="1608705191415"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\vcs.xml" crc="1608524828388"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\sqldialects.xml" crc="1608524880949"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\modules.xml" crc="1608524828396"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\misc.xml" crc="1608703179355"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\jsLibraryMappings.xml" crc="1608704583830"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\encodings.xml" crc="1608524828381"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\.idea\deployment.xml" crc="1608524828404"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\StatGrabber.xml" crc="1609671281819"/>
+  <file name="C:\xampp\htdocs\aardstatsphp\index.php" crc="1607575649630"/>
+ </filescache>
+</project>

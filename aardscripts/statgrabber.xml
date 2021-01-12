@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<DOCTYPE muclient>
+<muclient>
+    <plugin
+    name="Aardwolf_Stats_Grabber"
+    author="Jyscal"
+    id="584807a32cf46af04a1bece3"
+    language="Lua"
+    purpose="Track and export stats."
+    save_state="y"
+    date_written="2020-12-06 06:12:14"
+    requires="4.43"
+    version="1.0"
+    >
+    <description trim="y">
+        <![CDATA[
+            Track levels, Gold, Trains and Pups gained
+            during a session. Sessions can be started and
+            stopped at any time and then exported to upload
+            to AardStats Website
+        ]]>
+    </description>
+    </plugin>
+    
+    <triggers>
+    	<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^You get (.+) gold coins from (.+) of (.+).$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="tallyGold"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^You raise a level! You are now level (.+).$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="tallyLevels"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^You gain (.+) hit points, (.+) mana, (.+) moves, (.+) practices, (.+) trains and (.+) instinct trains.$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="tallyTrains"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^Lucky! You gain an extra (.+) training sessions!$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="tallyLucky"
+			sequence="100"
+			send_to="12"
+		></trigger>
+		<trigger
+			enabled="y"
+			regexp="y"
+			group="trackers"
+			match="^You are taxed (.+) gold coins by your clan.$"
+			keep_evaluating="y"
+			omit_from_output="y"
+			script="removeTax"
+			sequence="100"
+			send_to="12"
+		></trigger>
+    </triggers>
+
+    <aliases>
+		<alias
+		   script="command_line"
+		   match="^starttrack$"
+		   enabled="y"
+		   regexp="y"
+		   send_to="12"
+		   keep_evaluating="y"
+		   sequence="1"
+  		></alias>
+		<alias
+		   script="command_line"
+		   match="^stoptrack$"
+		   enabled="y"
+		   regexp="y"
+		   send_to="12"
+		   keep_evaluating="y"
+		   sequence="1"
+  		></alias>
+  		<alias
+		   script="command_line"
+		   match="^exportstats$"
+		   enabled="y"
+		   regexp="y"
+		   send_to="12"
+		   keep_evaluating="y"
+		   sequence="1"
+  		></alias>
+    </aliases>
+    <plugin>
+		<![CDATA[
+			function tallyLevels(name, line, wildcards)
+				
+			end
+			
+			function tallyGold(name, line, wildcards)
+
+			end
+			
+			function tallyTrains(name, line, wildcards)
+
+			end
+			
+			function tallyPups(name, line, wildcards)
+
+			end
+			
+			function OnPluginInstall()
+			
+			end
+			
+			function OnPluginEnable()
+			
+			end
+			
+			function OnPluginDisable()
+			
+			end
+			
+			function OnPluginSaveState()
+			
+			end
+		]]>
+    </plugin>
+</muclient>
